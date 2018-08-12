@@ -1,0 +1,108 @@
+/* required CSS */
+
+.diagonal {
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+
+/* general config */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background: url('bg.jpg') repeat;
+    background-size: 10%;
+    color: black;
+    font-size: 72px;
+    line-height: 200px;
+    text-shadow: 1px 2px 3px #ccc;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fab {
+    font-size: 30px;
+    vertical-align: 30px;
+    color: lightpink;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+button {
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    margin-left: 12px;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: lightpink;
+    color: lightpink;
+}
+
+section {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px 10px 20px;
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+pre,
+.diagonal,
+button {
+    display: inline-block;
+}
+
+pre {
+    vertical-align: -12px;
+    margin-left: 40px;
+}
+
+.hljs {
+    width: 300px;
+    padding: 10px;
+}
+
+/* set generic mask style */
+
+.diagonal-mask {
+    background: white;
+}
+
+.diagonal {
+    width: 300px;
+    height: 100px;
+    background-image: linear-gradient(45deg, lightblue, lightpink);
+}
+
+.third .diagonal-mask {
+    animation-delay: 2s !important;
+}

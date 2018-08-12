@@ -3,7 +3,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/diagonal-mask.js/blob/master/LICENSE)
 
-> 45 degree advanced masking.
+> 📐45 degree advanced masking.
 
 ## Demo
 
@@ -41,7 +41,7 @@
 ## Q & A
 
 Q: 1. How to amend mask style and animation?  
-A: Add style to `.diagonal-mask`, do not cover required css set in Usage.   
+A: Add style to `.diagonal-mask`, do not cover required css set in Usage.  
 For example, when amending animation delay time, set `animation-delay` instead of rewrite `animation`. Meanwhile add `!important` to force cover.
 
 Q: 2. How to amend mask direction?  
