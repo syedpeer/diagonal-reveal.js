@@ -13,6 +13,9 @@
             const mask = _initializeMask(item)
             mask.style.transform = _calTransform('cover', _config.direction)
             _generateAnimation(mask, index, _config)
+            mask.addEventListener('animationend', function () {
+                item.removeChild(mask)
+            })
         })
     }
 
@@ -89,7 +92,7 @@
 
     function _generateAnimation(el, index, config) {
         const aniName = `diagonal-${diagonalId++}-${index}`
-        el.style.animation = `${aniName} 0.5s ease-in 0.5s forwards`
+        el.style.animation = `${aniName} 0.5s ease-in forwards`
 
         // insert keyframe
         let style = document.createElement('style');
