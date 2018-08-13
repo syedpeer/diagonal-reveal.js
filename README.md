@@ -5,7 +5,7 @@
 
 > 📐45 degree reveal animation.
 
-[View demo](http://frontendsophie.com/diagonal-mask.js/)
+[View demo](http://frontendsophie.com/diagonal-reveal.js/)
 
 ## Usage
 
