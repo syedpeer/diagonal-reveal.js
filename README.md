@@ -19,7 +19,7 @@
         overflow: hidden;
     }
 
-    .diagonal-reveal {
+    .diagonal-layer {
         position: absolute;
         top: 0;
         left: 0;
