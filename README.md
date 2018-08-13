@@ -1,17 +1,15 @@
-# diagonal-mask.js
+# diagonal-reveal.js
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FrontendSophie/diagonal-mask.js/blob/master/LICENSE)
 
-> 📐45 degree advanced masking.
-
-## Demo
+> 📐45 degree reveal animation.
 
 [View demo](http://frontendsophie.com/diagonal-mask.js/)
 
 ## Usage
 
-1. import `diagonal-mask.min.js`
+1. import `diagonal-reveal.min.js`
 2. add `.diagonal` to target element
 3. set required css style:
 
@@ -21,7 +19,7 @@
         overflow: hidden;
     }
 
-    .diagonal-mask {
+    .diagonal-reveal {
         position: absolute;
         top: 0;
         left: 0;
@@ -29,7 +27,7 @@
     }
 ```
 
-4. run `diagonal()` when needed
+4. run `diagonalIn()` when needed
 
 ## Options
 
@@ -40,9 +38,9 @@
 
 ## Q & A
 
-Q: 1. How to amend mask style and animation?  
-A: Add style to `.diagonal-mask`, do not cover required css set in Usage.  
+Q: 1. How to amend style and animation?  
+A: Add style to `.diagonal-reveal`, do not cover required css set in Usage.  
 For example, when amending animation delay time, set `animation-delay` instead of rewrite `animation`. Meanwhile add `!important` to force cover.
 
-Q: 2. How to amend mask direction?  
-A: pass parameter like `diagonal({direction: 'down-right'})`.
+Q: 2. How to amend reveal direction?  
+A: pass parameter like `diagonalIn({direction: 'down-right'})`.

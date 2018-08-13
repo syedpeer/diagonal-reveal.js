@@ -10,23 +10,25 @@
         const _config = Object.assign({}, defaultConfig, config);
         const content = document.querySelectorAll(_config.selector)
         content.forEach(function (item, index) {
-            const mask = _initializeMask(item)
-            mask.style.transform = _calTransform('cover', _config.direction)
-            _generateAnimation(mask, index, _config)
-            mask.addEventListener('animationend', function () {
-                item.removeChild(mask)
+            const layer = _initializeLayer(item)
+            layer.style.transform = _calTransform('cover', _config.direction)
+            const styleEle = _generateAnimation(layer, index, _config)
+
+            layer.addEventListener('animationend', function () {
+                item.removeChild(layer)
+                document.head.removeChild(styleEle)
             })
         })
     }
 
-    function _initializeMask(item) {
+    function _initializeLayer(item) {
         const el = document.createElement('div')
-        el.className = 'diagonal-mask'
+        el.className = 'diagonal-layer'
         item.appendChild(el)
 
         const cWidth = item.offsetWidth // includes border
         const cHeight = item.offsetHeight
-        const mSize = (cWidth + cHeight) * Math.sqrt(2) / 2 // calculate square mask size
+        const mSize = (cWidth + cHeight) * Math.sqrt(2) / 2 // calculate square layer size
         el.style.width = `${mSize}px`
         el.style.height = `${mSize}px`
 
@@ -95,8 +97,8 @@
         el.style.animation = `${aniName} 0.5s ease-in forwards`
 
         // insert keyframe
-        let style = document.createElement('style');
-        style.type = 'text/css';
+        let style = document.createElement('style')
+        style.type = 'text/css'
         style.innerHTML =
             `
                 @keyframes ${aniName} {
@@ -108,7 +110,8 @@
                     }
                 }'
             `
-        document.head.appendChild(style);
+        document.head.appendChild(style)
+        return style
     }
 
     exports.diagonalIn = _diagonalIn;
