@@ -1,17 +1,4 @@
-/* required CSS */
-
-.diagonal {
-    position: relative;
-    overflow: hidden;
-}
-
-.diagonal-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
-}
-
+@import "./diagonal-reveal.css";
 /* general config */
 
 body {

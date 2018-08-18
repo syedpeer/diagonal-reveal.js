@@ -9,31 +9,24 @@
 
 ## Usage
 
+1. import `diagonal-reveal.min.js` and `diagonal-reveal.css`
+
 ```
-<!-- 1. set required css -->
-.diagonal {
-    position: relative;
-    overflow: hidden;
-}
-
-.diagonal-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
-}
-
-<!-- 2. add `.diagonal` to target element -->
-<div class="diagonal">
-</div>
-
-<!-- 3. import `diagonal-reveal.min.js` -->
 <script src="./diagonal-reveal.min.js"></script>
 
-<!-- 4. run `diagonalIn()` when needed -->
-<script>
-    diagonalIn()
-</script>
+import "./diagonal-reveal.css";
+```
+
+2.  add `.diagonal` to target element
+
+```
+<div class="diagonal"></div>
+```
+
+3. run `diagonalIn()` when needed -->
+
+```
+diagonalIn()
 ```
 
 ## Options
