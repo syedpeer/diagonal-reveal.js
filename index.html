@@ -17,44 +17,30 @@
     <script>
         hljs.initHighlightingOnLoad();
     </script>
-    <title>diagonal-reveal.js: 45 degree reveal animation</title>
+    <title>diagonal-reveal.js: a diagonal reveal animation library</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
-        diagonal-reveal.js
-        <a href="https://github.com/FrontendSophie/diagonal-reveal.js" target="_blank">
-            <i class="fab fa-github-alt"></i>
-        </a>
+        <h2 class="diagonal header">
+            diagonal-reveal.js
+            <a href="https://github.com/FrontendSophie/diagonal-reveal.js" target="_blank">
+                <i class="fab fa-github-alt"></i>
+            </a>
+        </h2>
     </header>
 
     <section>
         <h4>
-            default style
+            default style:
             <button onclick="diagonalIn({selector: '.diagonal.first'});">play</button>
         </h4>
         <div class="diagonal first"></div>
         <pre>
 <code>
-diagonalIn();
-</code>
-</pre>
-    </section>
-
-    <section>
-        <h4>
-            direction-case: from top left to bottom right
-            <button onclick="diagonalIn({
-                selector: '.diagonal.second',
-                direction: 'down-right'
-            });">play</button>
-        </h4>
-        <div class="diagonal second"></div>
-        <pre>
-<code>
 diagonalIn({
-    direction: 'down-right'
+    selector: '.diagonal.first'
 });
 </code>
 </pre>
@@ -62,14 +48,82 @@ diagonalIn({
 
     <section>
         <h4>
-            animation-case: delay 1.5s
-            <button onclick="diagonalIn({selector: '.diagonal.third'});">play</button>
+            60 degree:
+            <button onclick="diagonalIn({
+                selector: '.diagonal.second',
+                degree: 60
+            });">play</button>
+        </h4>
+        <div class="diagonal second"></div>
+        <pre>
+<code>
+diagonalIn({
+    selector: '.diagonal.second',
+    degree: 60
+});
+</code>
+</pre>
+    </section>
+
+    <section>
+        <h4>
+            from left to right:
+            <button onclick="diagonalIn({
+                    selector: '.diagonal.third',
+                    direction: 'right'
+                });">play</button>
         </h4>
         <div class="diagonal third"></div>
         <pre>
 <code>
-.third .diagonal-layer {
+diagonalIn({
+    selector: '.diagonal.third',
+    direction: 'right'
+});
+</code>
+</pre>
+    </section>
+
+    <section>
+        <h4>
+            delay 1.5s:
+            <button onclick="diagonalIn({selector: '.diagonal.fourth'});">play</button>
+        </h4>
+        <div class="diagonal fourth"></div>
+        <pre>
+<code>
+.fourth .diagonal-layer {
     animation-delay: 1.5s !important;
+}
+</code>
+</pre>
+    </section>
+
+    <section>
+        <h4>
+            duration 1.5s:
+            <button onclick="diagonalIn({selector: '.diagonal.fifth'});">play</button>
+        </h4>
+        <div class="diagonal fifth"></div>
+        <pre>
+<code>
+.fifth .diagonal-layer {
+    animation-duration: 1.5s !important;
+}
+</code>
+</pre>
+    </section>
+
+    <section>
+        <h4>
+            smoke effect:
+            <button onclick="diagonalIn({selector: '.diagonal.sixth'});">play</button>
+        </h4>
+        <div class="diagonal sixth"></div>
+        <pre>
+<code>
+.sixth .diagonal-layer {
+    opacity: 0.3;
 }
 </code>
 </pre>
@@ -84,5 +138,11 @@ diagonalIn({
 
     <script src="./diagonal-reveal.min.js"></script>
 </body>
+
+<script>
+    diagonalIn({
+        selector: '.diagonal.header'
+    });
+</script>
 
 </html>
