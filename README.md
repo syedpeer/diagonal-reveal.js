@@ -37,11 +37,12 @@ diagonalIn()
 | direction | animation direction: `left`, `right`      | `left`      | string |
 | degree    | angle of inclination                      | 45          | number |
 
-## Q & A
+## FAQ
 
-Q: 1. How to amend layer style and animation?  
-A: Add style to `.diagonal-layer`, do not cover required css set in Usage.  
-For instance, when amending animation delay time, set `animation-delay` instead of rewrite `animation` and add `!important` to force cover.
+##### How to modify layer style and animation?  
+Extend `.diagonal-layer` but do not override `diagonal-reveal.css`.  
+For instance, set `animation-delay: xx !important;` instead of rewrite `animation` when amending animation delay time.  
 
-Q: 2. How to amend reveal direction and degree?  
-A: pass parameter like `diagonalIn({direction: 'right', degree: 60})`.
+
+##### How to modify reveal direction and degree?  
+pass options like `diagonalIn({direction: 'right', degree: 60})`.
