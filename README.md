@@ -5,7 +5,7 @@
 
 > a diagonal reveal animation library.
 
-[View demo](http://frontendsophie.com/diagonal-reveal.js/)
+[View demo](http://frontendsophie.com/diagonal-reveal.js/)  
 
 ## Usage
 
@@ -37,12 +37,12 @@ diagonalIn()
 | direction | animation direction: `left`, `right`      | `left`      | string |
 | degree    | angle of inclination                      | 45          | number |
 
-## FAQ
+## FAQ  
 
-##### How to modify layer style and animation?  
+#### How to modify reveal direction and degree?  
+
+Pass options like `diagonalIn({direction: 'right', degree: 60})`.  
+
+#### How to modify layer style and animation?  
 Extend `.diagonal-layer` but do not override `diagonal-reveal.css`.  
 For instance, set `animation-delay: xx !important;` instead of rewrite `animation` when amending animation delay time.  
-
-
-##### How to modify reveal direction and degree?  
-pass options like `diagonalIn({direction: 'right', degree: 60})`.
