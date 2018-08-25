@@ -1,5 +1,14 @@
+/**
+ * http://frontendsophie.com/diagonal-reveal.js/
+ * A diagonal reveal animation library.
+ * @version v1.0.0
+ * @author Sophie He
+ * @copyright ©2018 Sophie He
+ * Released under the MIT license
+ **/
+
 (function (exports) {
-    let diagonalId = 0;
+    let diagonalId = 0
     const defaultConfig = {
         selector: '.diagonal',
         direction: 'left',

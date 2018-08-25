@@ -1,13 +1,13 @@
 {
-  "name": "diagonal-reveal.js",
+  "name": "diagonal-reveal",
   "version": "1.0.0",
-  "description": "a diagonal reveal animation library",
-  "main": "diagonal-reveal.js",
-  "dependencies": {
+  "description": "A lightweight animation library with zero dependencies.",
+  "main": "dist/diagonal-reveal.min.js",
+  "dependencies": {},
+  "devDependencies": {
     "uglify-js": "^3.4.7",
-    "uglifyjs": "^2.4.11"
+    "uglifycss": "0.0.29"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,7 @@
     "reveal",
     "animation"
   ],
-  "author": "sophie",
+  "author": "Sophie He",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FrontendSophie/diagonal-reveal.js/issues"
