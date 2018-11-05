@@ -10,8 +10,8 @@
 ## Installation
 
 ```
-<link rel="stylesheet" href="http://osly086qe.bkt.clouddn.com/diagonal-reveal.min.css">
-<script src="http://osly086qe.bkt.clouddn.com/diagonal-reveal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frontendsophie/diagonal-reveal.js@1.0.0/dist/diagonal-reveal.min.css">
+<script src="https://cdn.jsdelivr.net/gh/frontendsophie/diagonal-reveal.js@1.0.0/dist/diagonal-reveal.min.js"></script>
 ```
 
 ## Usage
